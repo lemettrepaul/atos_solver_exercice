@@ -1,3 +1,4 @@
+import decimal
 import random as random
 import numpy as np
 
@@ -23,7 +24,7 @@ class Solver:
             de = en - ex
             if de > 0:
                 x = n
-            elif np.exp(-de / t) < random.random():
+            elif np.exp(decimal.Decimal(-de / t)) < random.random():
                 x = n
             t = t * cool
         return x
@@ -39,7 +40,7 @@ class Solver:
             de = en - ex
             if de < 0:
                 x = n
-            elif np.exp(-de / t) > random.random():
+            elif np.exp(decimal.Decimal(-de / t)) > random.random():
                 x = n
             t = t * cool
         return x
