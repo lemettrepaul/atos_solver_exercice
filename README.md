@@ -2,7 +2,7 @@
 
 Le fichier solver.py contient la classe Solver <br/>
 La méthode E est la réécriture de la fonction f(x) = x^T . Q . x <br/>
-Les 2 méthodes principales sont annealing_max(self, Q, x0, nb_iter, t_init, cool) et annealing_min(self, Q, x0, nb_iter, t_init, cool) qui respectivement recherche le maximum et le minimum de la fonction E à l'aide de l'algorithme du recuit simulé. <br/> <br/>
+Les 2 méthodes principales sont annealing_max(self, Q, x0, nb_iter, t_init, cool) et annealing_min(self, Q, x0, nb_iter, t_init, cool) qui respectivement recherche le maximum et le minimum de la fonction E à l'aide de l'algorithme du recuit simulé. <br/>
 
 Le fichier solver_brut.py contient la classe SolverBrut  <br/>
 La méthode brut_force permet de tester l'ensemble des x possibles afin de trouver le x minimisant f(x) et le x maximisant f(x) <br/>
